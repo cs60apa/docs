@@ -40,6 +40,10 @@ header {
   color: rgb(147, 55, 55);
 }
 
+.header__btn:hover{
+  border:  rgb(203, 53, 53) 2px solid;;
+}
+
 .header__info {
   display: flex;
 }
