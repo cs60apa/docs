@@ -11,10 +11,15 @@
       keyword="DeveCircle Africa, Learning Management System, Programming, Developer Community"
     />
     <title>Docs</title>
-    <link rel="stylesheet" href="/styles/styles.main.css" />
-    <link rel="stylesheet" href="/styles/styles.footer.css">
+    <link
+      rel="stylesheet"
+      href="../../styles/styles.main.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="../../styles/styles.footer.css" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!--FONT AWESOME-->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -28,10 +33,14 @@
     />
   </head>
 
-  <body class="ebook-body">
+  <body>
     <header>
-      <a href="/index.html"><img id="logo" src="/assets/logo.png" alt="logo" /></a>
-      <button class="header__btn"><a href="https://devcircleafrica.com/ebooks">Buy Now</a></button>
+      <a href="../../index.html"
+        ><img id="logo" src="../../assets/logo.png" alt="logo"
+      /></a>
+      <button class="header__btn">
+        <a href="https://devcircleafrica.com/ebooks">Buy Now</a>
+      </button>
       <hr class="underline" />
     </header>
 
@@ -43,44 +52,121 @@
             <p class="flex text-center">
               <b>PDF/EPUB</b> book is an offline version of the tutorial. Buying
               this book, you support the project and become able to read the
-              tutorial as e-book.
-              <br><br>
+              tutorial as e-book. <br /><br />
               You get the whole content as of now, plus 1 year of free updates.
             </p>
           </div>
           <div class="book-link">
-            <a href=""><img src="/assets/javascript.jpeg" alt="" class="JavaScript"></a>
+            <a href=""
+              ><img
+                src="../../assets/javascript.jpeg"
+                alt=""
+                class="JavaScript"
+            /></a>
             <figcaption><a href="">Download zip</a></figcaption>
           </div>
         </div>
-    </div>
-
-
-
-
-      
-      <!-- Footer -->
-    <footer>
-      <div class="footer">
-        <div class="row">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </div>
-
-        <div class="row">
-          <ul>
-            <li><a href="https://forum.devcircleafrica.com">Community</a></li>
-            <li><a href="https://devcircleafrica.com/terms/">Privacy Policy</a></li>
-            <li><a href="https://devcircleafrica.com/donate/">Donate</a></li>
-            <li><a href="https://devcircleafrica.com/careers/">Career</a></li>
-          </ul>
-        </div>
-
-        <div class="row">Copyright © 2023 Docs - All rights reserved</div>
       </div>
-    </footer>
-    <!-- footer -->
+      <!-- Tutorial price list -->
+      <div class="book__list">
+        <div class="wrapper">
+          <h3>Which part of tutorial do u want??</h3>
+          <div class="radio-group">
+            <ul class="price__list">
+              <li class="list-items">
+                <input
+                  type="radio"
+                  class="group"
+                  name="radio-btn"
+                  id="option1"
+                />
+                <label for="option1" class="list__options"
+                  >Part I. The JavaScript Language<span class="price"
+                    >5$</span
+                  ></label
+                ><br />
+              </li>
+              <li class="list-items">
+                <input
+                  type="radio"
+                  class="group"
+                  name="radio-btn"
+                  id="option2"
+                />
+                <label for="option2" class="list__options"
+                  >Part II. Browser: Document, Events, Interfaces
+                  <span class="price">10$</span></label
+                ><br />
+              </li>
+              <li class="list-items">
+                <input
+                  type="radio"
+                  class="group"
+                  id="option3"
+                  name="radio-btn"
+                />
+                <label for="option3" class="list__options"
+                  >Part III. Various topics: Network, Regexps, etc.<span
+                    class="price"
+                    >12.99$</span
+                  ></label
+                ><br />
+              </li>
+              <li class="list-items">
+                <input
+                  type="radio"
+                  class="group"
+                  id="option4"
+                  name="radio-btn"
+                />
+                <label for="option4" class="list__options"
+                  >Parts I && II together<span class="price">4$</span></label
+                ><br />
+              </li>
+              <li class="list-items">
+                <input
+                  type="radio"
+                  class="group"
+                  id="option5"
+                  name="radio-btn"
+                />
+                <label for="option5" class="list__options"
+                  >Full Tutorial (all 3 parts)<span class="price"
+                    >20$</span
+                  ></label
+                ><br />
+              </li>
+              <button id="payment">Proceed with payment</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+
+          <div class="row">
+            <ul>
+              <li><a href="https://forum.devcircleafrica.com">Community</a></li>
+              <li>
+                <a href="https://devcircleafrica.com/terms/">Privacy Policy</a>
+              </li>
+              <li><a href="https://devcircleafrica.com/donate/">Donate</a></li>
+              <li><a href="https://devcircleafrica.com/careers/">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="row">Copyright © 2023 Docs - All rights reserved</div>
+        </div>
+      </footer>
+      <!-- footer -->
+    </div>
   </body>
 </html>

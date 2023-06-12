@@ -116,6 +116,7 @@ header {
   background-color: #e0cbcb;
 }
 
+
 #icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -131,7 +132,12 @@ header {
 
 /* Buy Ebook Section */
 
-
+.body{
+  background-image: url(/docs/assets/—Pngtree—indonesia\ independence\ day\ festival\ celebration_1453036.png);
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center;
+}
 #ebook-header{
   margin: 0 150px;
 }
@@ -158,6 +164,102 @@ header {
 
 figcaption{
   text-align: center;
+}
+
+/* tutorail section */
+.book__list{
+  margin: 0 150px;
+}
+
+.wrapper{
+  background-color: white;  
+  margin: 0 auto;
+  width: 700px;
+  padding: 40px 20px ;
+  margin-bottom:  15%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper h3{
+  text-align: center;
+}
+
+.price__list{
+  list-style-type: none;
+  width: 600px;
+  cursor: pointer;
+}
+
+.list-items{
+  background-color: #f4f4f4;
+  padding: 30px 60px;
+  margin-bottom: 3px;
+}
+
+.list-items:hover{
+  background-color: pink;
+  transition: all 0.5s;
+}
+.list__options{
+  font-size: smaller;
+  font-family: intel mono;
+}
+
+
+.price{
+  float: right;
+  font-size: 20px;
+  color: teal;
+  font-weight: 600;
+}
+
+@keyframes shake {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-4px); }
+  40% { transform: translateY(4px); }
+  60% { transform: translateY(-2px); }
+  80% { transform: translateY(2px); }
+  100% { transform: translateY(0); }
+}
+
+#payment {
+  transition: transform 0.2s;
+}
+
+#payment:hover {
+  animation: shake 0.8s infinite;
+  background-color: rgb(31, 155, 155);
+}
+
+
+#payment{
+  color: white;
+  background-color: teal;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* For Webkit based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: teal;
+
 }
 
 /* media queries for mobile view */
