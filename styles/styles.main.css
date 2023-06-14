@@ -166,7 +166,7 @@ figcaption{
   text-align: center;
 }
 
-/* tutorail section */
+/* tutorial section */
 .book__list{
   margin: 0 150px;
 }
@@ -329,4 +329,6 @@ figcaption{
     margin: 0 15px;
     width: 100%;
   }
+
+  
 }
