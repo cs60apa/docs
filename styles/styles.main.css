@@ -2,16 +2,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: jetBrains Mono;
+  font-family: system-ui, -apple-system, BlinkMacSystem;
 }
 
 header {
   padding-top: 10px;
 }
 
-.container{
+.container {
   margin: 0 150px;
-
 }
 
 #logo {
@@ -40,8 +39,8 @@ header {
   color: rgb(147, 55, 55);
 }
 
-.header__btn:hover{
-  border:  rgb(203, 53, 53) 2px solid;;
+.header__btn:hover {
+  border: rgb(203, 53, 53) 2px solid;
 }
 
 .header__info {
@@ -99,6 +98,9 @@ header {
 
 .row__one {
   margin-bottom: 10px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .content__btn {
@@ -116,7 +118,6 @@ header {
   background-color: #e0cbcb;
 }
 
-
 #icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -125,88 +126,87 @@ header {
 }
 
 /* subtitle area */
-.subtitle p{
+.subtitle p {
   width: 80%;
+  margin-bottom: 5%;
 }
-
 
 /* Buy Ebook Section */
 
-.body{
+.body {
   background-image: url(/docs/assets/Doc_background.png);
   background-repeat: no-repeat;
-  background-size: cover ;
+  background-size: cover;
   background-position: center;
 }
-#ebook-header{
+#ebook-header {
   margin: 0 150px;
 }
 
-#ebook-content{
+#ebook-content {
   margin-top: 40px;
   display: flex;
   width: 100%;
 }
 
-.text-contents{
+.text-contents {
   width: 50%;
   margin-left: 100px;
-  margin-right: 60px ;
+  margin-right: 60px;
 }
 
-.text-contents p{
+.text-contents p {
   font-size: 15px;
 }
 
-.jsbook{
+.jsbook {
   width: 125px;
 }
 
-figcaption{
+figcaption {
   text-align: center;
 }
 
 /* tutorial section */
-.book__list{
+.book__list {
   margin: 0 150px;
 }
 
-.wrapper{
-  background-color: white;  
+.wrapper {
+  background-color: white;
   margin: 0 auto;
   width: 700px;
-  padding: 40px 20px ;
-  margin-bottom:  15%;
+  padding: 40px 20px;
+  margin-bottom: 15%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.wrapper h3{
+.wrapper h3 {
   text-align: center;
 }
 
-.price__list{
+.price__list {
   list-style-type: none;
   width: 600px;
   cursor: pointer;
 }
 
-.list-items{
+.list-items {
   background-color: #f4f4f4;
   padding: 30px 60px;
   margin-bottom: 3px;
 }
 
-.list-items:hover{
+.list-items:hover {
   background-color: pink;
   transition: all 0.5s;
 }
-.list__options{
+.list__options {
   font-size: smaller;
   font-family: intel mono;
 }
 
-
-.price{
+.price {
   float: right;
   font-size: 20px;
   color: teal;
@@ -214,12 +214,24 @@ figcaption{
 }
 
 @keyframes shake {
-  0% { transform: translateY(0); }
-  20% { transform: translateY(-4px); }
-  40% { transform: translateY(4px); }
-  60% { transform: translateY(-2px); }
-  80% { transform: translateY(2px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-4px);
+  }
+  40% {
+    transform: translateY(4px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #payment {
@@ -231,8 +243,7 @@ figcaption{
   background-color: rgb(31, 155, 155);
 }
 
-
-#payment{
+#payment {
   color: white;
   background-color: teal;
   margin-top: 10px;
@@ -259,9 +270,109 @@ figcaption{
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: teal;
-
 }
 
+/* Navbars */
+
+.navbar{
+  position: sticky;
+  top: 0;
+}
+
+
+.nav--links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav--links li {
+  display: inline-flex;
+  padding: 0 20px;
+}
+
+.nav--links li a {
+  text-decoration: none;
+  /* text-align: center; */
+  color: black;
+  font-size: 18px;
+}
+
+.nav--links li a:hover {
+  color: rgb(214, 10, 10);
+  transition: all 0.6s;
+}
+
+.nav-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  font-size: 12px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.line ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.line li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.line .nums {
+  margin-right: 10px;
+}
+
+.line a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.content h3:hover {
+  color: rgb(214, 10, 10);
+  text-decoration: underline;
+}
+
+.nums {
+  padding-right: 10px;
+  font-size: small;
+  align-items: center;
+}
+
+.numbers li a {
+  text-decoration: none;
+  color: rgb(75, 75, 252);
+}
+
+.numbers li a:hover {
+  text-decoration: underline;
+  color: rgb(214, 10, 10);
+}
+
+.line1 {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  margin: 0 auto; */
+}
+
+.line2{
+  width: 100%;
+}
+.line3{
+  width: 100%;
+}
 /* media queries for mobile view */
 
 @media (max-width: 768px) {
@@ -269,7 +380,7 @@ figcaption{
     margin-left: 2px;
   }
 
-  .container{
+  .container {
     margin: 0;
   }
 
@@ -308,11 +419,6 @@ figcaption{
     margin: 0 auto;
   }
 
-  .row__one,
-  .row__two {
-    margin-bottom: 20px;
-  }
-
   .content__btn {
     padding: 20px 40px;
     font-size: 14px;
@@ -324,57 +430,57 @@ figcaption{
     margin-right: 3px;
   }
 
-  .subtitle{
+  .subtitle {
     align-items: center;
     margin: 0 15px;
     width: 100%;
   }
 
   /* media queries for ebook section */
-  .body{
+  .body {
     padding: 0;
     margin: 0;
-    overflow-x: hidden ;
+    overflow-x: hidden;
   }
-  #ebook-header{
+  #ebook-header {
     margin: 0;
     padding: 5px;
   }
-  #ebook-content{
+  #ebook-content {
     flex-direction: column;
   }
-  .text-contents{
+  .text-contents {
     margin: 0;
     width: 90%;
     padding: 20px;
   }
 
-  .text-contents p{
+  .text-contents p {
     font-size: 15px;
   }
 
-  figcaption{
+  figcaption {
     text-align: left;
   }
 
-  .book__list{
+  .book__list {
     margin: 0;
   }
-  .wrapper{
+  .wrapper {
     width: 80vw;
   }
 
-  .price__list{
+  .price__list {
     width: 100%;
     margin-left: -40px;
   }
-  
-  .list-items{
-    padding: 20px ;
+
+  .list-items {
+    padding: 20px;
     font-size: small;
   }
 
-  .price{
+  .price {
     font-size: 16px;
   }
 }
