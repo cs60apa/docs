@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystem;
@@ -265,7 +265,7 @@ figcaption {
 
 ::-webkit-scrollbar-thumb {
   background-color: #888;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -354,7 +354,7 @@ figcaption {
 
 .numbers li a {
   text-decoration: none;
-  color: rgb(75, 75, 252);
+  color: rgb(105, 105, 238);
 }
 
 .numbers li a:hover {
@@ -364,9 +364,6 @@ figcaption {
 
 .line1 {
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  margin: 0 auto; */
 }
 
 .line2{
@@ -484,5 +481,20 @@ figcaption {
 
   .price {
     font-size: 16px;
+  }
+  /* media queries for content secction */
+  .nav--links{
+  margin-left: -25px;
+  }
+
+  .nav--links li a{
+    font-size: 15px;
+  }
+
+  .numbers{
+    flex-basis: 100%;
+    width: 50%;
+    flex-direction: column  !important;
+    /* margin-bottom: 20px !important; */
   }
 }
