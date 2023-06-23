@@ -1,481 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      description="At DeveCircle Africa we are building a platform for Innovators"
-    />
-    <meta
-      keyword="DeveCircle Africa, Learning Management System, Programming, Developer Community"
-    />
-    <title>Docs</title>
-    <link rel="stylesheet" href="styles/styles.main.css" />
-    <link rel="stylesheet" href="styles/styles.footer.css" />
-    <!--FONT AWESOME-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
 
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta description="At DeveCircle Africa we are building a platform for Innovators" />
+  <meta keyword="DeveCircle Africa, Learning Management System, Programming, Developer Community" />
+  <title>Docs</title>
+  <link rel="stylesheet" href="styles/styles.main.css" />
+  <link rel="stylesheet" href="styles/styles.footer.css" />
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <body>
-    <header>
-      <img id="logo" src="assets/logo.png" alt="" srcset="" />
-      <button type="button" class="header__btn">
-        <a href="#">Buy Ebook</a>
-      </button>
-      <hr class="underline" />
-    </header>
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet" />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
 
-    <div class="container">
-      <div class="header__info">
-        <div class="content">
-          <div class="text-content">
-            <h1>The Modern Documentation Tutorial</h1>
-            <p>
-              How it's done now. From the basics to advanced topics with simple,
-              but detailed explanations.
-            </p>
-          </div>
-          <div class="search">
-            <input
-              type="search"
-              name="searchbar"
-              id="search"
-              placeholder="search in tutorial docs"
-            />
-            <button type="submit" class="search__btn">Search</button>
-          </div>
-        </div>
-        <div class="content__buttons">
-          <div class="row__one">
-            <button
-              onclick="location.href='pages/ebook/ebook.html'"
-              class="content__btn"
-              id="btn__1"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-                id="icon"
-              >
-                <path
-                  d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z"
-                />
-              </svg>
-              Epub/Pdf
-            </button>
+<body>
+  <header>
+    <img id="logo" src="assets/logo.png" alt="" srcset="" />
+    <button type="button" class="header__btn">
+      <a href="#">Buy Ebook</a>
+    </button>
+    <hr class="underline" />
+  </header>
 
-            <button class="content__btn">
-              Share:
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-                id="icon"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-            <!-- </div> -->
-            <!-- <div class="row__two"> -->
-            <button class="content__btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-                id="icon"
-              >
-                <path
-                  d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z"
-                />
-              </svg>
-              Discord
-            </button>
-            <button
-              onclick="location.href ='https://github.com/cs60apa/docs'"
-              type="button"
-              class="content__btn"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-                id="icon"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Github
-            </button>
-          </div>
-          <!-- </div> -->
-        </div>
-      </div>
-      <div class="subtitle">
-        <h2>Table of content</h2>
-        <p>
-          Main course contains 2 parts which cover JavaScript as a programming
-          language and working with a browser. There are also additional series
-          of thematic articles.
-        </p>
-      </div>
-      <div class="nav-section">
-        <nav class="navbar">
-          <ul class="nav--links">
-            <li>
-              <a href="" class="nav-name">
-                <span class="tag">PART 1</span>
-                <span> The JavaScript Language </span>
-              </a>
-            </li>
-            <li>
-              <a href="" class="nav-name">
-                <span class="tag">PART 2</span>
-                <span>Browser: Document, Events, Interfaces</span></a
-              >
-            </li>
-            <li>
-              <a href="" class="nav-name">
-                <span class="tag">PART 3</span>
-                <span>Additional Articles</span>
-              </a>
-            </li>
-          </ul>
-          <hr class="underline" />
-        </nav>
-      </div>
+  <div class="container">
+    <div class="header__info">
       <div class="content">
-        <h2>The JavaScript language</h2>
-        <p>
-          Here we learn JavaScript, starting from scratch and go on to advanced
-          concepts like OOP. We concentrate on the language itself here, with
-          the minimum of environment-specific notes.
-        </p>
-        <div class="first-row">
-          <h3>An Introduction</h3>
-          <ul class="numbers">
-            <div class="line1">
-              <li>
-                <span class="nums">1.1</span
-                ><a href="">An Introduction to JavaScript</a>
-              </li>
-              <li>
-                <span class="nums">1.2</span
-                ><a href="">Manuals and specifications</a>
-              </li>
-            </div>
-            <div class="line2">
-              <li><span class="nums">1.3</span><a href="">Code editors</a></li>
-              <li>
-                <span class="nums">1.4</span><a href="">Developer consoles </a>
-              </li>
-            </div>
-          </ul>
+        <div class="text-content">
+          <h1>The Modern Documentation Tutorial</h1>
+          <p>
+            How it's done now. From the basics to advanced topics with simple,
+            but detailed explanations.
+          </p>
         </div>
-        <div class="second-row">
-          <h3>JavaScript fundamentals</h3>
-          <div class="numbers">
-            <div class="line">
-              <ul>
-                <li>
-                  <span class="nums">2.1</span><a href="">Hello, world</a>
-                </li>
-                <li>
-                  <span class="nums">2.2</span><a href="">Code structure</a>
-                </li>
-                <li>
-                  <span class="nums">2.3</span
-                  ><a href="">The modern mode,"use strict"</a>
-                </li>
-                <li><span class="nums">2.4</span><a href="">Variables</a></li>
-                <br />
-                <li><span class="nums">2.5</span><a href="">Data types</a></li>
-                <li>
-                  <span class="nums">2.6</span
-                  ><a href="">Interaction: alert, prompt, confirm</a>
-                </li>
-              </ul>
-            </div>
+        <div class="search">
+          <input type="search" name="searchbar" id="search" placeholder="search in tutorial docs" />
+          <button type="submit" class="search__btn">Search</button>
+        </div>
+      </div>
+      <div class="content__buttons">
+        <div class="row__one">
+          <button onclick="location.href='pages/ebook/ebook.html'" class="content__btn" id="btn__1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" id="icon">
+              <path
+                d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
+            </svg>
+            Epub/Pdf
+          </button>
 
-            <div class="line">
-              <ul>
-                <li>
-                  <span class="nums">2.7</span><a href="">Type Conversions</a>
-                </li>
-                <li>
-                  <span class="nums">2.8</span
-                  ><a href="">Basic operators, maths</a>
-                </li>
-                <li><span class="nums">2.9</span><a href="">Comparisons</a></li>
-                <li>
-                  <span class="nums">2.10</span
-                  ><a href="">Conditional branching: if, '?' </a>
-                </li>
-                <li>
-                  <span class="nums">2.11</span><a href="">Logical operators</a>
-                </li>
-                <li>
-                  <span class="nums">2.12</span
-                  ><a href="">Nullish coalescing operator '??'</a>
-                </li>
-              </ul>
-            </div>
+          <button class="content__btn">
+            Share:
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" id="icon">
+              <path fill-rule="evenodd"
+                d="M15.75 4.5a3 3 0 11.825 2.066l-8.421 4.679a3.002 3.002 0 010 1.51l8.421 4.679a3 3 0 11-.729 1.31l-8.421-4.678a3 3 0 110-4.132l8.421-4.679a3 3 0 01-.096-.755z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <!-- </div> -->
+          <!-- <div class="row__two"> -->
+          <button class="content__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" id="icon">
+              <path
+                d="M11.25 4.533A9.707 9.707 0 006 3a9.735 9.735 0 00-3.25.555.75.75 0 00-.5.707v14.25a.75.75 0 001 .707A8.237 8.237 0 016 18.75c1.995 0 3.823.707 5.25 1.886V4.533zM12.75 20.636A8.214 8.214 0 0118 18.75c.966 0 1.89.166 2.75.47a.75.75 0 001-.708V4.262a.75.75 0 00-.5-.707A9.735 9.735 0 0018 3a9.707 9.707 0 00-5.25 1.533v16.103z" />
+            </svg>
+            Discord
+          </button>
+          <button onclick="location.href ='https://github.com/cs60apa/docs'" type="button" class="content__btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" id="icon">
+              <path fill-rule="evenodd"
+                d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+                clip-rule="evenodd" />
+            </svg>
+            Github
+          </button>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="subtitle">
+      <h2>Table of content</h2>
+      <p>
+        Main course contains 2 parts which cover JavaScript as a programming
+        language and working with a browser. There are also additional series
+        of thematic articles.
+      </p>
+    </div>
+    <div class="nav-section">
+      <nav class="navbar">
+        <ul class="nav--links">
+          <li>
+            <a href="" class="nav-name">
+              <span class="tag">PART 1</span>
+              <span> The JavaScript Language </span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-name">
+              <span class="tag">PART 2</span>
+              <span>Browser: Document, Events, Interfaces</span></a>
+          </li>
+          <li>
+            <a href="" class="nav-name">
+              <span class="tag">PART 3</span>
+              <span>Additional Articles</span>
+            </a>
+          </li>
+        </ul>
+        <hr class="underline" />
+      </nav>
+    </div>
+    <div class="content">
+      <h2>The JavaScript language</h2>
+      <p>
+        Here we learn JavaScript, starting from scratch and go on to advanced
+        concepts like OOP. We concentrate on the language itself here, with
+        the minimum of environment-specific notes.
+      </p>
 
-            <div class="line">
-              <ul>
-                <li>
-                  <span class="nums">2.13</span
-                  ><a href="">Loops: while and for </a>
-                </li>
-                <li>
-                  <span class="nums">2.14</span
-                  ><a href="">The "switch" statement</a>
-                </li>
-                <li><span class="nums">2.15</span><a href="">Functions</a></li>
-                <li>
-                  <span class="nums">2.16</span
-                  ><a href="">Function expressions</a>
-                </li>
-                <li>
-                  <span class="nums">2.17</span
-                  ><a href="">Arrow functions, the basics</a>
-                </li>
-                <li>
-                  <span class="nums">2.18</span
-                  ><a href="">JavaScript specials</a>
-                </li>
-              </ul>
-            </div>
+
+      <div class="first-row">
+        <h3>An Introduction</h3>
+        <ul class="numbers">
+          <div class="line1">
+            <li>
+              <span class="nums">1.1</span><a href="">An Introduction to JavaScript</a>
+            </li>
+            <li>
+              <span class="nums">1.2</span><a href="">Manuals and specifications</a>
+            </li>
+          </div>
+          <div class="line2">
+            <li><span class="nums">1.3</span><a href="">Code editors</a></li>
+            <li>
+              <span class="nums">1.4</span><a href="">Developer consoles </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+
+      <div class="second-row">
+        <h3>JavaScript fundamentals</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">2.1</span><a href="">Hello, world</a>
+              </li>
+              <li>
+                <span class="nums">2.2</span><a href="">Code structure</a>
+              </li>
+              <li>
+                <span class="nums">2.3</span><a href="">The modern mode,"use strict"</a>
+              </li>
+              <li><span class="nums">2.4</span><a href="">Variables</a></li>
+              <br />
+              <li><span class="nums">2.5</span><a href="">Data types</a></li>
+              <li>
+                <span class="nums">2.6</span><a href="">Interaction: alert, prompt, confirm</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">2.7</span><a href="">Type Conversions</a>
+              </li>
+              <li>
+                <span class="nums">2.8</span><a href="">Basic operators, maths</a>
+              </li>
+              <li><span class="nums">2.9</span><a href="">Comparisons</a></li>
+              <li>
+                <span class="nums">2.10</span><a href="">Conditional branching: if, '?' </a>
+              </li>
+              <li>
+                <span class="nums">2.11</span><a href="">Logical operators</a>
+              </li>
+              <li>
+                <span class="nums">2.12</span><a href="">Nullish coalescing operator '??'</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">2.13</span><a href="">Loops: while and for </a>
+              </li>
+              <li>
+                <span class="nums">2.14</span><a href="">The "switch" statement</a>
+              </li>
+              <li><span class="nums">2.15</span><a href="">Functions</a></li>
+              <li>
+                <span class="nums">2.16</span><a href="">Function expressions</a>
+              </li>
+              <li>
+                <span class="nums">2.17</span><a href="">Arrow functions, the basics</a>
+              </li>
+              <li>
+                <span class="nums">2.18</span><a href="">JavaScript specials</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="third-row">
-          <h3>Code quality</h3>
-          <div class="numbers">
-            <div class="line">
-              <ul>
-                <li>
-                  <span class="nums">3.1</span
-                  ><a href="">Debugging in the browser</a>
-                </li>
-                <li>
-                  <span class="nums">3.2</span><a href="">Coding Style</a>
-                </li>
-              </ul>
-            </div>
-            <div class="line">
-              <ul>
-                <li><span class="nums">3.3</span><a href="">Comment</a></li>
-                <li><span class="nums">3.4</span><a href="">Ninja code</a></li>
-              </ul>
-            </div>
-            <div class="line">
-              <ul>
-                <li>
-                  <span class="nums">3.5</span
-                  ><a href="">Automated testing with Mocha</a>
-                </li>
-                <li>
-                  <span class="nums">3.6</span
-                  ><a href="">Polyfills and transpilers</a>
-                </li>
-              </ul>
-            </div>
+      </div>
+
+
+      <div class="third-row">
+        <h3>Code quality</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">3.1</span><a href="">Debugging in the browser</a>
+              </li>
+              <li>
+                <span class="nums">3.2</span><a href="">Coding Style</a>
+              </li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li><span class="nums">3.3</span><a href="">Comment</a></li>
+              <li><span class="nums">3.4</span><a href="">Ninja code</a></li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">3.5</span><a href="">Automated testing with Mocha</a>
+              </li>
+              <li>
+                <span class="nums">3.6</span><a href="">Polyfills and transpilers</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="fourth-row">
-          <h3>Objects: the basics</h3>
-          <div class="numbers">
-            <div class="line">
-              <li><span class="nums">4.1</span><a href="">Objects </a></li>
-              <li>
-                <span class="nums">4.2</span
-                ><a href=""> Object references and copying</a>
-              </li>
-              <li>
-                <span class="nums">4.3</span><a href=""> Garbage collection</a>
-              </li>
-            </div>
-            <div class="line">
-              <li>
-                <span class="nums">4.4</span
-                ><a href="">Object methods, "this" </a>
-              </li>
-              <li>
-                <span class="nums">4.5</span
-                ><a href=""> Constructor, operator "new"</a>
-              </li>
-              <li>
-                <span class="nums">4.6</span
-                ><a href=""> Optional chaining '?.'</a>
-              </li>
-            </div>
-            <div class="line">
-              <li><span class="nums">4.7</span><a href="">Symbol type</a></li>
-              <li>
-                <span class="nums">4.8</span
-                ><a href="">Object to primitive conversion</a>
-              </li>
-              <!-- <li> <span class="nums">4.9</span><a href=""> Garbage collection</a></li> -->
-            </div>
+      </div>
+
+
+      <div class="fourth-row">
+        <h3>Objects: the basics</h3>
+        <div class="numbers">
+          <div class="line">
+            <li><span class="nums">4.1</span><a href="">Objects </a></li>
+            <li>
+              <span class="nums">4.2</span><a href=""> Object references and copying</a>
+            </li>
+            <li>
+              <span class="nums">4.3</span><a href=""> Garbage collection</a>
+            </li>
+          </div>
+          <div class="line">
+            <li>
+              <span class="nums">4.4</span><a href="">Object methods, "this" </a>
+            </li>
+            <li>
+              <span class="nums">4.5</span><a href=""> Constructor, operator "new"</a>
+            </li>
+            <li>
+              <span class="nums">4.6</span><a href=""> Optional chaining '?.'</a>
+            </li>
+          </div>
+          <div class="line">
+            <li><span class="nums">4.7</span><a href="">Symbol type</a></li>
+            <li>
+              <span class="nums">4.8</span><a href="">Object to primitive conversion</a>
+            </li>
+            <!-- <li> <span class="nums">4.9</span><a href=""> Garbage collection</a></li> -->
           </div>
         </div>
-        <div class="fifth-row">
-          <h3>Data types</h3>
-          <div class="numbers">
-            <div class="line">
+      </div>
+
+
+      <div class="fifth-row">
+        <h3>Data types</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
               <li>
-                <span class="nums">5.1</span
-                ><a href="">Methods of primitives</a>
+                <span class="nums">5.1</span><a href="">Methods of primitives</a>
               </li>
               <li><span class="nums">5.2</span><a href="">Numbers</a></li>
               <br />
               <li><span class="nums">5.3</span><a href="">Strings</a></li>
               <br />
               <li><span class="nums">5.4 </span><a href=""> Arrays</a></li>
-            </div>
-            <div class="line">
-              <li><span class="nums">5.5</span><a href="">Array methods</a></li>
-              <li><span class="nums">5.6</span><a href="">Iterables</a></li>
-              <li><span class="nums">5.7</span><a href="">Map and Set</a></li>
+          </div>
+          <div class="line">
+            <li><span class="nums">5.5</span><a href="">Array methods</a></li>
+            <li><span class="nums">5.6</span><a href="">Iterables</a></li>
+            <li><span class="nums">5.7</span><a href="">Map and Set</a></li>
+            <li>
+              <span class="nums">5.8</span><a href="">WeakMap and WeakSet</a>
+            </li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
               <li>
-                <span class="nums">5.8</span><a href="">WeakMap and WeakSet</a>
+                <span class="nums">5.9</span><a href="">Object.keys, values, entries</a>
               </li>
-            </div>
-            <div class="line">
               <li>
-                <span class="nums">5.9</span
-                ><a href="">Object.keys, values, entries</a>
-              </li>
-              <li>
-                <span class="nums">5.10</span
-                ><a href="">Destructuring assignment</a>
+                <span class="nums">5.10</span><a href="">Destructuring assignment</a>
               </li>
               <li>
                 <span class="nums">5.11</span><a href="">Date and time</a>
               </li>
               <li>
-                <span class="nums">5.12</span
-                ><a href="">JSON methods, toJSON</a>
+                <span class="nums">5.12</span><a href="">JSON methods, toJSON</a>
               </li>
-            </div>
+            </ul>
           </div>
         </div>
+      </div>
 
-        <div class="sixth-row">
-          <h3>Advanced working with functions</h3>
-          <div class="numbers">
-            <div class="line">
+
+      <div class="sixth-row">
+        <h3>Advanced working with functions</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
               <li>
                 <span class="nums">6.1</span><a href="">Recursion and stack</a>
               </li>
               <li>
-                <span class="nums">6.2</span
-                ><a href="">Rest parameters and spread syntax</a>
+                <span class="nums">6.2</span><a href="">Rest parameters and spread syntax</a>
               </li>
               <br />
               <li>
-                <span class="nums">6.3</span
-                ><a href="">Variable scope, closure</a>
+                <span class="nums">6.3</span><a href="">Variable scope, closure</a>
               </li>
               <br />
               <li>
                 <span class="nums">6.4 </span><a href="">The old "var"</a>
               </li>
-            </div>
-            <div class="line">
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
               <li><span class="nums">6.5</span><a href="">Global object</a></li>
               <li>
                 <span class="nums">6.6</span><a href="">Function object, NFE</a>
               </li>
               <li>
-                <span class="nums">6.7</span
-                ><a href="">The "new Function" syntax</a>
+                <span class="nums">6.7</span><a href="">The "new Function" syntax</a>
               </li>
               <li>
-                <span class="nums">6.8</span
-                ><a href="">Scheduling: setTimeout and setInterval</a>
+                <span class="nums">6.8</span><a href="">Scheduling: setTimeout and setInterval</a>
               </li>
-            </div>
-            <div class="line">
+          </div>
+          </ul>
+          <div class="line">
+            <ul>
               <li>
-                <span class="nums">6.9</span
-                ><a href="">Decorators and forwarding, call/apply</a>
+                <span class="nums">6.9</span><a href="">Decorators and forwarding, call/apply</a>
               </li>
               <li>
                 <span class="nums">6.10</span><a href="">Function binding</a>
               </li>
               <li>
-                <span class="nums">6.11</span
-                ><a href="">Arrow functions revisited</a>
+                <span class="nums">6.11</span><a href="">Arrow functions revisited</a>
               </li>
-            </div>
+            </ul>
           </div>
         </div>
-        <div class="seventh-row">
-          <h3>Object properties configuration</h3>
-          <div class="numbers">
-            <div class="line">
+      </div>
+
+
+
+
+      <div class="seventh-row">
+        <h3>Object properties configuration</h3>
+        <div class="numbers">
+          <li>
+            <span class="nums">7.1</span><a href="">Property flags and descriptors</a>
+          </li>
+          <li>
+            <span class="nums">7.2</span><a href="">Property getters and setters</a>
+          </li>
+        </div>
+      </div>
+
+      <div class="eight-row">
+        <h3>Prototypes, inheritance</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
               <li>
-                <span class="nums">7.1</span><a href="">Property flags and descriptors</a>
+                <span class="nums">8.1</span><a href="">Prototypal inheritance</a>
+              </li><br>
+              <li>
+                <span class="nums">8.2</span><a href="">F.prototype</a>
               </li>
-              <div class="line">
-                <li>
-                  <span class="nums">7.2</span><a href="">Property getters and setters</a>
-                </li>
-            </div>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">8.3</span><a href="">Native prototypes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">8.4</span><a href="">Prototype methods, objects without __proto__</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ninth-row">
+        <h3>Classes</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">9.1</span><a href="">Class basic syntax</a>
+              </li><br>
+              <li>
+                <span class="nums">9.2</span><a href="">Class inheritance</a>
+              </li>
+              <li>
+                <span class="nums">9.3</span><a href="">Static properties and method</a>
+              </li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">9.4</span><a href="">Private and protected properties and methods</a>
+              </li>
+              <li>
+                <span class="nums">9.5</span><a href="">Extending built-in classes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">9.7</span><a href="">Class checking: "instanceof"</a>
+              </li>
+              <li>
+                <span class="nums">9.8</span><a href="">Mixins</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tenth-row">
+        <h3>Error handling</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">10.1</span><a href="">Error handling, "try...catch"</a>
+              </li>
+              <li>
+                <span class="nums">10.2</span><a href="">Custom errors, extending Error</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="eleventh-row">
+        <h3>Advanced working with functions</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">11.1</span><a href="">Introduction: callbacks</a>
+              </li>
+              <li>
+                <span class="nums">11.2</span><a href="">Promise</a>
+              </li>
+              <br />
+              <li>
+                <span class="nums">11.3</span><a href="">Promises chaining</a>
+              </li>
+              <br />
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li><span class="nums">11.5</span><a href="">Error handling with promises</a></li>
+              <li>
+                <span class="nums">11.6</span><a href="">Promise API</a>
+              </li>
+              <br>
+              <li>
+                <span class="nums">11.7</span><a href="">Promisification</a>
+              </li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">11.9</span><a href="">Microtasks</a>
+              </li>
+              <li>
+                <span class="nums">11.10</span><a href="">Async/await</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="twelveth-row">
+        <h3>Generators, advanced iteration</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">12.1</span><a href="">Generators</a>
+              </li>
+              <li>
+                <span class="nums">12.2</span><a href="">Async iteration and generators</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="thirteenth-row">
+        <h3>Modules</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li>
+                <span class="nums">13.1</span><a href="">Modules, introduction</a>
+              </li>
+              <li>
+                <span class="nums">13.2</span><a href="">Export and Import</a>
+              </li>
+              <li>
+                <span class="nums">13.3</span><a href="">Dynamic imports</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="fourteenth-row">
+        <h3>Miscellaneous</h3>
+        <div class="numbers">
+          <div class="line">
+            <ul>
+              <li><span class="nums">14.1</span><a href="">Proxy and Reflect</a></li><br>
+              <li><span class="nums">14.2</span><a href="">Eval: run a code string</a></li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li><span class="nums">14.3</span><a href="">Currying</a></li><br>
+              <li><span class="nums">14.4</span><a href="">Reference Type</a></li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul>
+              <li><span class="nums">14.5</span><a href="">BigInt </a></li><br>
+              <li><span class="nums">14.6</span><a href="">Unicode, String internals </a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    
-        <!-- footer -->
-    
-    <footer>
-      <div class="footer">
-        <div class="row">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </div>
 
-        <div class="row">
-          <ul>
-            <li><a href="https://forum.devcircleafrica.com">Community</a></li>
-            <li>
-              <a href="https://devcircleafrica.com/terms/">Privacy Policy</a>
-            </li>
-            <li><a href="https://devcircleafrica.com/donate/">Donate</a></li>
-            <li><a href="https://devcircleafrica.com/careers/">Career</a></li>
-          </ul>
-        </div>
+    <div class="content">
+      <h2>Browser: Document, Events, Interfaces</h2>
+      <p>Learning how to manage the browser page: add elements, manipulate their size and position, dynamically create
+        interfaces and interact with the visitor.</p>
 
-        <div class="row">Copyright © 2023 Docs - All rights reserved</div>
+
+        
+
+    </div>
+
+
+  </div>
+  <!-- </div> -->
+
+  <!-- footer -->
+
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
       </div>
-    </footer>
-    <!-- footer -->
-  </body>
+
+      <div class="row">
+        <ul>
+          <li><a href="https://forum.devcircleafrica.com">Community</a></li>
+          <li>
+            <a href="https://devcircleafrica.com/terms/">Privacy Policy</a>
+          </li>
+          <li><a href="https://devcircleafrica.com/donate/">Donate</a></li>
+          <li><a href="https://devcircleafrica.com/careers/">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="row">Copyright © 2023 Docs - All rights reserved</div>
+    </div>
+  </footer>
+  <!-- footer -->
+</body>
+
 </html>
